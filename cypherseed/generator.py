@@ -1,6 +1,6 @@
 # cypherseed/cypherseed/generator.py
 
-from .wordlists import load_wordlist
+from cypherseed.wordlists import load_wordlist
 from secrets import choice
 import string
 import random
@@ -22,8 +22,11 @@ def generate_passphrase(wordlist_name, word_count, separator='-', min_word_lengt
 
     # Filter words based on length criteria
     if min_word_length or max_word_length:
-        words = [word for word in words if len(word) >= (min_word_length or 0) and len(word) <= (max_word_length or float('inf'))]
-
+        words = [word for word in words if (min_word_length is None or len(word) >= min_word_length) and (max_word_length is None or len(word) <= max_word_length)]
+    
+    if not words:
+        raise ValueError("No words in the wordlist meet the specified length criteria.")
+    
     # Generate passphrase
     passphrase = separator.join(choice(words) for _ in range(word_count))
 
@@ -36,3 +39,6 @@ def generate_passphrase(wordlist_name, word_count, separator='-', min_word_lengt
         passphrase += separator + choice(symbols)
 
     return passphrase
+
+
+
