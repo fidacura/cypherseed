@@ -1,4 +1,4 @@
-# cypherseed/cypherseed/test_password_strength.py
+# cypherseed/tests/test_password_strength.py
 
 import unittest
 from cypherseed import password_strength

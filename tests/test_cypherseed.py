@@ -1,4 +1,4 @@
-# cypherseed/cypherseed/test_generator.py
+# cypherseed/tests/test_generator.py
 
 import unittest
 from cypherseed import generator

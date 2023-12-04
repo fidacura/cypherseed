@@ -1,4 +1,4 @@
-# cypherseed/cypherseed/test_wordlists.py
+# cypherseed/tests/test_wordlists.py
 
 import unittest
 import os
