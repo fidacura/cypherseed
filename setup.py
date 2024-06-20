@@ -4,11 +4,11 @@ from setuptools import setup, find_packages
 setup(
     name='cypherseed',
     version='0.1',
+    description="Simple high-entropy passphrase generation tool.",
+    url="https://github.com/fidacura/cypherseed",
     author="fidacura",
     author_email="hello@fidacura.xyz",
-    description="",
-    license="",
-    url="https://github.com/fidacura/cypherseed",
+    license='MIT',
     packages=find_packages(),
     install_requires=[
         # Add project dependencies here
