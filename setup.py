@@ -11,7 +11,7 @@ setup(
     license='MIT',
     packages=find_packages(),
     install_requires=[
-        # Add project dependencies here
+        # cypherseed-deps
     ],
     entry_points={
         'console_scripts': [
