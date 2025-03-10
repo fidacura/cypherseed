@@ -9,6 +9,9 @@ def load_wordlist(name):
     :param name: The name of the wordlist file.
     :return: List of words.
     """
+    # wordlist path
     wordlist_path = os.path.join(os.path.dirname(__file__), 'wordlists', f'{name}.txt')
+    
+    # print wordlist
     with open(wordlist_path, 'r') as file:
         return [line.strip() for line in file]

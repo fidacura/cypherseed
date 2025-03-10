@@ -18,22 +18,25 @@ def generate_passphrase(wordlist_name, word_count, separator='-', min_word_lengt
     :param include_symbols: Include symbols in the passphrase.
     :return: Generated passphrase.
     """
+    # load wordlist
     words = load_wordlist(wordlist_name)
 
-    # Filter words based on length criteria
+    # filter words: on length criteria
     if min_word_length or max_word_length:
         words = [word for word in words if (min_word_length is None or len(word) >= min_word_length) and (max_word_length is None or len(word) <= max_word_length)]
     
+    # error
     if not words:
         raise ValueError("No words in the wordlist meet the specified length criteria.")
     
-    # Generate passphrase
+    # generate passphrase
     passphrase = separator.join(choice(words) for _ in range(word_count))
 
-    # Optionally include numbers and symbols
+    # optional: numbers
     if include_numbers:
         numbers = string.digits
         passphrase += separator + choice(numbers)
+    # optional: symbols
     if include_symbols:
         symbols = string.punctuation
         passphrase += separator + choice(symbols)
