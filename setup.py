@@ -15,7 +15,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'cypherseed=cypherseed.generator:main',
+            'cypherseed=cypherseed:main',
         ],
     },
 )
