@@ -40,23 +40,23 @@ pip install -e .
 ### Basic Usage
 
 ```bash
-# Generate a simple 4-word passphrase
+# generate a simple 4-word passphrase
 cypherseed generate 4
 
-# Generate with strength analysis
+# generate with strength analysis
 cypherseed generate 6 --show-strength
 
-# Use random numbers/symbols as separators
+# use random numbers/symbols as separators
 cypherseed generate 5 --random-separators
 ```
 
 ### Generate Passphrases
 
 ```bash
-# Basic generation
+# basic generation
 cypherseed generate <word_count>
 
-# Advanced options
+# advanced options
 cypherseed generate 6 \
     --wordlist eff_large_wordlist \
     --min-length 4 \
@@ -67,18 +67,18 @@ cypherseed generate 6 \
     --count 3 \
     --show-strength
 
-# Use random separators (numbers/symbols between words)
+# use random separators (numbers/symbols between words)
 cypherseed generate 4 --random-separators
-# Output: word7word@word3word
+# output: word7word@word3word
 
-# Generate multiple passphrases
+# generate multiple passphrases
 cypherseed generate 5 --count 10
 ```
 
 ### Calculate Strength
 
 ```bash
-# Analyse passphrase strength
+# analyse passphrase strength
 cypherseed calculate 4 --wordlist default --detailed
 cypherseed calculate 6 1296  # 6 words from 1296-word list
 ```
@@ -86,13 +86,13 @@ cypherseed calculate 6 1296  # 6 words from 1296-word list
 ### Manage Wordlists
 
 ```bash
-# List available wordlists
+# list available wordlists
 cypherseed update --list
 
-# Download new wordlist
+# download new wordlist
 cypherseed update --download https://example.com/wordlist.txt --destination custom.txt
 
-# Filter existing wordlist
+# filter existing wordlist
 cypherseed update \
     --source wordlist.txt \
     --destination filtered.txt \
@@ -100,7 +100,7 @@ cypherseed update \
     --max-length 8 \
     --exclude-pattern ".*ing$"
 
-# Analyse wordlist
+# analyse wordlist
 cypherseed update --source wordlist.txt --analyse
 ```
 
@@ -192,10 +192,10 @@ pip install -e .
 ### Testing
 
 ```bash
-# Run tests
+# run tests
 python -m pytest tests/
 
-# Run with coverage
+# run with coverage
 python -m pytest tests/ --cov=cypherseed --cov-report=html
 ```
 
