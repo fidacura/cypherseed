@@ -201,4 +201,6 @@ python -m pytest tests/ --cov=cypherseed --cov-report=html
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v2.0 - see the [LICENSE](LICENSE) file for details.
+
+Copyright (C) 2025 fidacura. This is free software distributed under GPL v2.0 terms.
