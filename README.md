@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/cypherseed.svg)](https://badge.fury.io/py/cypherseed)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-red.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 A simple high-entropy passphrase generation tool that uses mulitple wordlists to create secure, memorable, and cryptographically strong passphrases.
 
