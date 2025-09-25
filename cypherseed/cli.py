@@ -1,7 +1,5 @@
 """
-Command-line interface for cypherseed.
-
-This module provides the CLI functionality with subcommands for generating passphrases,
+Command-line interface with subcommands for generating passphrases,
 calculating strength, and managing wordlists.
 """
 

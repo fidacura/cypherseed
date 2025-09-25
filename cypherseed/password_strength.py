@@ -1,8 +1,5 @@
 """
-Password strength calculation functionality for cypherseed.
-
-This module provides entropy calculation and strength analysis for passphrases
-generated using wordlists.
+Password strength and entropy calculation functionality.
 """
 
 import math

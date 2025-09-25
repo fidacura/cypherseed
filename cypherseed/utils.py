@@ -1,8 +1,5 @@
 """
-Utility functions for cypherseed.
-
-This module provides wordlist management, downloading, and filtering functionality
-for maintaining and updating wordlists used by cypherseed.
+Utility functions.
 """
 
 import re

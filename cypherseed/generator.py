@@ -1,8 +1,5 @@
 """
-Passphrase generation functionality for cypherseed.
-
-This module provides the core passphrase generation logic using wordlists
-and configurable parameters for security and customization.
+Passphrase generation functionality.
 """
 
 import string

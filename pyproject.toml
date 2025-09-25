@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cypherseed"
-version = "0.1.0"
+version = "0.1.1"
 description = "Simple high-entropy passphrase generation tool"
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
-    {name = "fidacura", email = "hello@fidacura.xyz"}
+    {name = "fidacura", email = "hey@fidacura.net"}
 ]
 maintainers = [
-    {name = "fidacura", email = "hello@fidacura.xyz"}
+    {name = "fidacura", email = "hey@fidacura.net"}
 ]
 keywords = [
     "passphrase", "password", "security", "cryptography", 
@@ -23,7 +23,7 @@ classifiers = [
     "Environment :: Console",
     "Intended Audience :: End Users/Desktop",
     "Intended Audience :: System Administrators",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",

@@ -9,7 +9,7 @@ from .generator import generate_passphrase
 from .password_strength import calculate_strength
 from .wordlists import load_wordlist
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "fidacura"
 __email__ = "hey@fidacura.net"
 

@@ -1,7 +1,5 @@
 """
-Wordlist loading functionality for cypherseed.
-
-This module handles loading wordlists from the package's wordlists directory.
+Wordlist loading functionality.
 """
 
 import sys
